@@ -61,7 +61,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
 TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 #TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.3
+#TARGET_KERNEL_CLANG_VERSION := 9.0.3
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -101,7 +101,7 @@ BOARD_USES_ALSA_AUDIO := true
 #AUDIO_FEATURE_ENABLED_USB_TUNNEL_AUDIO := true
 #endif
 
-USE_XML_AUDIO_POLICY_CONF := 0
+USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 AUDIO_FEATURE_ENABLED_HIFI_AUDIO := true
@@ -286,3 +286,6 @@ endif
 
 # inherit from the proprietary version
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
+
+#mainfest
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(PLATFORM_PATH)/configs/vendor_framework_compatibility_matrix.xml
