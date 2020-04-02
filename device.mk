@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 # Device Path
-DEVICE_PATH := device/xiaomi/wayne
+DEVICE_PATH := device/xiaomi/whyred
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -94,11 +94,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/MIUI_DualCamera_watermark_6X.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
 
 # Vendor files
-$(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
+$(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := aosp_wayne
-PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := Mi 6X (AOSP)
+PRODUCT_NAME := aosp_whyred
+PRODUCT_DEVICE := whyred
+PRODUCT_MODEL := Remi Note 5 Pro (AOSP)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi

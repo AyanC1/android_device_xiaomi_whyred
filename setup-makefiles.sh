@@ -18,10 +18,10 @@
 set -e
 
 # Required!
-export DEVICE=wayne
+export DEVICE=whyred
 export DEVICE_COMMON=sdm660-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2020
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

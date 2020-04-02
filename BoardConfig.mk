@@ -24,7 +24,7 @@
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 # Device Path
-DEVICE_PATH := device/xiaomi/wayne
+DEVICE_PATH := device/xiaomi/whyred
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
@@ -34,8 +34,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne-perf_defconfig
-TW_USE_TOOLBOX := true
+TARGET_KERNEL_CONFIG := whyred_defconfig
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml

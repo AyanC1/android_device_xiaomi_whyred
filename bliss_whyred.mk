@@ -22,7 +22,7 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/wayne/device.mk)
+$(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit bliss GSM telephony parts
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
@@ -32,11 +32,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
+    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := bliss_wayne
-PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := MI 6X
+PRODUCT_NAME := bliss_whyred
+PRODUCT_DEVICE := whyred
+PRODUCT_MODEL := Redmi Note 5 Pro
