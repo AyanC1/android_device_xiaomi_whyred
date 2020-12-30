@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # PixelExperience Properties
 TARGET_INCLUDE_WIFI_EXT := true
@@ -36,12 +36,12 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit from custom vendor.
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/ANXCamera/config.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_whyred
+PRODUCT_NAME := bliss_whyred
 PRODUCT_MODEL := Redmi Note 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
