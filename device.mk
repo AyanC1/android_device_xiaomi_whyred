@@ -167,6 +167,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     libxml2 \
     Snap
+# \    Camera2
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -242,8 +243,8 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Gcam
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
+#PRODUCT_PACKAGES += \
+ #   GoogleCameraGo
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
